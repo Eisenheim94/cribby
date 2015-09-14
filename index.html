@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<title>Backbone.js | Cribby</title>
+		<link rel="stylesheet" href="assets/index.css">
+	</head>
+	<body>
+		<section class="cribbyapp">
+			<header class="header">
+				<h1>Cribby</h1>
+				<input class="new-question" placeholder="What's the question?" autofocus>
+			</header>
+			<section class="main">
+				<input class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul class="questions-list">
+					<!--li>
+						<h2>1) Question title</h2>
+						<p>Question content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in bibendum ipsum, et auctor nibh. Mauris non turpis et tortor volutpat varius gravida nec neque. Pellentesque tristique scelerisque nisi, id vehicula lectus placerat at. Phasellus convallis at ligula commodo eleifend.</p>
+						<div class="information">
+							<span class="author">Author: Demid Ganenko</span>
+							<span class="edited">Edited: Never</span>
+						</div>
+					</li-->
+				</ul>
+			</section>
+			<footer class="footer"></footer>
+		</section>
+		<footer class="info">
+			<p>Created by <a href="http://demka.me/" target="_blank">Demid Ganenko</a></p>
+			<p>Regardings to <a href="https://github.com/addyosmani" target="_blank">Addy Osmani</a></p>
+		</footer>
+		<script type="text/template" id="item-template">
+						<h2><%- title %></h2>
+						<p><%- content %></p>
+						<div class="information">
+							<span class="author">Author: <%- author %></span>
+							<span class="edited">Edited: <%- edited %></span>
+						</div>
+		</script>
+		<script src="js/lib/jquery-1.7.1.js"></script>
+		<script src="js/lib/underscore.js"></script>
+		<script src="js/lib/backbone.js"></script>
+		<script src="js/lib/backbone.localStorage.js"></script>
+		<script src="js/models/question.js"></script>
+		<script src="js/collections/questions.js"></script>
+		<script src="js/views/questions.js"></script>
+		<script src="js/views/app.js"></script>
+		<!--script src="js/routers/router.js"></script-->
+		<script src="js/app.js"></script>
+	</body>
+</html>
+
