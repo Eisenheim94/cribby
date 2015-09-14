@@ -156,20 +156,17 @@ label[for='toggle-all'] {
 }
 
 .questions-list li h2 {
-	height: 20px;
-}
-
-.questions-list li h2,
-.questions-list li p {
 	width: 300px;
-	display: inline-block;
-	text-align: justify;
+	display: block;
+	height: 20px;
 }
 
 .questions-list li p {
 	width: 290px;
 	padding-right: 10px;
 	border-right: 1px solid #ddd;
+	text-align: justify;
+	display: inline-block;
 }
 
 .questions-list li .information {
@@ -177,6 +174,7 @@ label[for='toggle-all'] {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 14px;
+	margin-bottom: 10px;
 }
 
 .questions-list li:last-child {
